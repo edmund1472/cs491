@@ -1,7 +1,3 @@
-
-
-
-
 import Room from "./Room";
 
 export default function House(props) {

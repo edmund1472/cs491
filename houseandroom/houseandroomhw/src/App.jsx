@@ -6,18 +6,17 @@ export default function App() {
 
   return (
     <div>
+      <div>My Counter</div>
 
-      <h1>Counter: {count}</h1>
+      <button onClick={() => setCount((count) => count - 1)}>-</button>
 
-      <button onClick={() => setCount(count - 1)}>
-        Decrease
-      </button>
+      {count}
 
-      <button onClick={() => setCount(count + 1)}>
-        Increase
-      </button>
+      <button onClick={() => setCount((count) => count + 1)}>+</button>
 
-      <House name="paradise"></House>
+      <hr />
+
+      <House name="paradise" />
     </div>
   );
 }
